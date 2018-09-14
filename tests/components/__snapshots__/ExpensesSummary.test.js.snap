@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render properly for multiple expenses 1`] = `
+<div>
+  <h3>
+    Showing 
+    3
+     
+    expenses
+     for 
+    $110.10
+  </h3>
+</div>
+`;
+
+exports[`should render properly for no expenses 1`] = `<div />`;
+
+exports[`should render properly for one expense 1`] = `
+<div>
+  <h3>
+    Showing 
+    1
+     
+    expense
+     for 
+    $100.00
+  </h3>
+</div>
+`;

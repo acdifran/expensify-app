@@ -23,3 +23,5 @@ export default [
     createdAt: moment(0).add(4, "days")
   }
 ];
+
+export const expensesTotalValue = 11010;
