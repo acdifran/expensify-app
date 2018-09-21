@@ -3,6 +3,7 @@
 exports[`should render EditExpensePage 1`] = `
 <div>
   <ExpenseForm
+    buttonName="Edit"
     expense={
       Object {
         "amount": 10000,

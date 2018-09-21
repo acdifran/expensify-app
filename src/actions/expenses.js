@@ -55,6 +55,21 @@ export const editExpense = (id, updates) => ({
   updates
 });
 
+export const startEditExpense = (id, updates) => {
+  return dispatch => {
+    const updatesWithMillisTime = {
+      ...updates,
+      ...(!!updates.createdAt && { createdAt: updates.createdAt.valueOf() })
+    };
+    return database
+      .ref(`expenses/${id}`)
+      .update({ ...updatesWithMillisTime })
+      .then(() => {
+        dispatch(editExpense(id, updates));
+      });
+  };
+};
+
 export const setExpenses = expenses => ({
   type: "SET_EXPENSES",
   expenses
