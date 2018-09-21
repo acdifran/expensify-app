@@ -1,17 +1,17 @@
-import * as firebase from "firebase";
+// import * as firebase from "firebase";
 
-const config = {
-  apiKey: "AIzaSyDx-EWnm92yDg8Ynb_-RJn4JRuBcXjDiZo",
-  authDomain: "expensify-fb103.firebaseapp.com",
-  databaseURL: "https://expensify-fb103.firebaseio.com",
-  projectId: "expensify-fb103",
-  storageBucket: "expensify-fb103.appspot.com",
-  messagingSenderId: "1070803259394"
-};
+// const config = {
+//   apiKey: "AIzaSyDx-EWnm92yDg8Ynb_-RJn4JRuBcXjDiZo",
+//   authDomain: "expensify-fb103.firebaseapp.com",
+//   databaseURL: "https://expensify-fb103.firebaseio.com",
+//   projectId: "expensify-fb103",
+//   storageBucket: "expensify-fb103.appspot.com",
+//   messagingSenderId: "1070803259394"
+// };
 
-firebase.initializeApp(config);
+// firebase.initializeApp(config);
 
-const database = firebase.database();
+// const database = firebase.database();
 
 // database.ref("expenses").push({
 //   description: "rent",
