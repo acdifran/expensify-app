@@ -11,9 +11,6 @@ export default () => (
     <NavLink to="/create" activeClassName="is-active" exact={true}>
       Create Expense
     </NavLink>
-    <NavLink to="/help" activeClassName="is-active" exact={true}>
-      Help
-    </NavLink>
     <button onClick={startLogout()}>Logout</button>
   </header>
 );
