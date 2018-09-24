@@ -33,6 +33,7 @@ exports[`should render EditExpensePage 1`] = `
     <button
       className="button button--secondary"
       onClick={[Function]}
+      type="button"
     >
       Remove Expense
     </button>

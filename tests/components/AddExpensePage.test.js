@@ -1,7 +1,7 @@
-import React from "react";
-import { shallow } from "enzyme";
-import { AddExpensePage } from "../../src/components/AddExpensePage";
-import expenses from "../fixtures/expenses";
+import React from 'react';
+import { shallow } from 'enzyme';
+import { AddExpensePage } from '../../src/components/AddExpensePage';
+import expenses from '../fixtures/expenses';
 
 let startAddExpense, history, wrapper;
 
@@ -13,12 +13,12 @@ beforeEach(() => {
   );
 });
 
-test("should render AddExpensePage", () => {
+test('should render AddExpensePage', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-test("should should handle onSubmit", () => {
-  wrapper.find("ExpenseForm").prop("onSubmit")(expenses[0]);
-  expect(history.push).toHaveBeenLastCalledWith("/");
+test('should should handle onSubmit', () => {
+  wrapper.find('ExpenseForm').prop('onSubmit')(expenses[0]);
+  expect(history.push).toHaveBeenLastCalledWith('/');
   expect(startAddExpense).toHaveBeenLastCalledWith(expenses[0]);
 });
